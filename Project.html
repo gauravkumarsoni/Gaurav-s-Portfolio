@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <div class="sidebar" id="sidebar">
+
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/About.html">About me</a></li>
+            <li><a href="/Contact.html">Contact</a></li>
+            <li><a href="/Skills.html">Skills</a></li>
+            <li><a href="/Resume.html">Resume</a></li>
+            <li><a href="/Project.html">Projects</a></li>
+        </ul>
+
+
+    </div>
+
+<section class="projects" id="projects">
+  <div class="projects-content">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+      <h3>🍔 To Food – Online Food Delivery App</h3>
+      <p>
+        A full-stack food ordering platform that allows users to browse menus, add items to cart, and place orders online. Admin can manage products and orders.
+      </p>
+      <p><strong>Tech Stack:</strong> React.js, Node.js, Express.js, MongoDB</p>
+      <a href="https://tofoodrestaurant.netlify.app/" target="_blank">🔗 Live Demo</a> |
+      <a href="https://github.com/gauravkumarsoni/To_Food_R.git" target="_blank">💻 GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>📝 Portfolio Website</h3>
+      <p>
+        A responsive personal portfolio to showcase my skills, projects, resume, and contact information.
+      </p>
+      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+      <a href="#" target="_blank">🔗 Live Demo</a> |
+      <a href="https://github.com/gauravkumar/portfolio" target="_blank">💻 GitHub</a>
+    </div>
+
+   
+
+  </div>
+</section>
+
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("hide");
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <div class="sidebar" id="sidebar">
+
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/About.html">About me</a></li>
+            <li><a href="/Contact.html">Contact</a></li>
+            <li><a href="/Skills.html">Skills</a></li>
+            <li><a href="/Resume.html">Resume</a></li>
+            <li><a href="/Project.html">Projects</a></li>
+        </ul>
+
+
+    </div>
+    <div class="top-s">
+        <h2>Get In Touch</h2>
+        <p>I’m always open to discussing new projects or opportunities. Fill out the form below and I’ll get back to you
+            soon!</p>
+
+    </div>
+
+
+
+    <form action="https://api.web3forms.com/submit" method="POST" class="form1">
+        <input type="hidden" name="access_key" value="671a9809-631d-498f-b388-947e5f35de47">
+        <input class="input1" type="text" name="name" placeholder="Enter Your FullName" required>
+        <input class="input1" type="email" name="email" placeholder="Enter Your Email" required>
+        <textarea class="message" name="message" placeholder="Type Your message...." required></textarea>
+
+        <button class="btn2" type="submit">Submit-> </button>
+        <hr class="content-s">
+
+        <div class="fot">
+            <a href="https://github.com/gauravkumarsoni" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gaurav-kumar-880959263" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/g.k.s.soni" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            <a href="gauravkumargupta722@gmail.com"><i class="fab fa-envelope" target="_blank"></i></a>
+
+            <a href="https://wa.me/8651945218" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+
+        </div>
+    </form>
+
+
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("hide");
+        }
+    </script>
+
+</body>
+
+</html>

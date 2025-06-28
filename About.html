@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="Style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <div class="sidebar" id="sidebar">
+
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/About.html">About me</a></li>
+            <li><a href="/Contact.html">Contact</a></li>
+            <li><a href="/Skills.html">Skills</a></li>
+            <li><a href="/Resume.html">Resume</a></li>
+            <li><a href="/Project.html">Projects</a></li>
+             
+        </ul>
+
+
+    </div>
+
+   <section class="about" id="about">
+  <div class="about-content">
+    <h2>About Me</h2>
+    <p>
+      I'm <strong>Gaurav Kumar</strong>, a Computer Science & Engineering graduate who has recently completed B.Tech. 
+      I have a strong passion for Full Stack Web Development and specialize in building responsive, dynamic, and user-friendly web applications using technologies like 
+      <strong>React.js</strong>, <strong>Node.js</strong>, <strong>Express.js</strong>, and <strong>MongoDB</strong>.
+    </p>
+
+    <p>
+      I've completed internships where I worked on real-time industry projects and gained practical experience in both frontend and backend development. 
+      One of my major projects is <strong>"To Food"</strong>, a full-stack food delivery application built from scratch.
+    </p>
+
+    <p>
+      I’m a dedicated learner, logical thinker, and always excited to explore new tools and technologies. 
+      I’m now looking for full-time opportunities where I can contribute, grow, and create impactful digital solutions.
+    </p>
+  </div>
+</section>
+
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("hide");
+        }
+    </script>
+
+</body>
+
+</html>

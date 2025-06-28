@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+    <div class="sidebar" id="sidebar">
+
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/About.html">About me</a></li>
+            <li><a href="/Contact.html">Contact</a></li>
+            <li><a href="/Skills.html">Skills</a></li>
+            <li><a href="/Resume.html">Resume</a></li>
+            <li><a href="/Project.html">Projects</a></li>
+        </ul>
+
+
+    </div>
+
+    <section class="resume" id="resume">
+        <div class="resume-content">
+            <h2>My Resume</h2>
+            <p>
+                Here is a detailed overview of my education, internships, projects, technical skills, and achievements.
+                You can download my resume or view it online.
+            </p>
+
+            <div class="resume-buttons">
+                <a href="Gaurav_Kumar_CV5.pdf" download>
+                    <button class="btn" >📄 Download Resume</button>
+                </a>
+                <a href="Gaurav_Kumar_CV5.pdf" target="_blank">
+                    <button class="btn">👁️ View Online</button>
+                </a>
+            </div>
+
+            <p>
+                🔗 <a href="https://www.linkedin.com/in/gaurav-kumar-880959263" target="_blank">
+                    Connect on LinkedIn
+                </a>
+            </p>
+        </div>
+    </section>
+
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("hide");
+        }
+    </script>
+
+</body>
+
+</html>
