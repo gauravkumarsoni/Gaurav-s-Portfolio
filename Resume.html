@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Resume</title>
     <link rel="stylesheet" href="Style.css">
@@ -11,21 +13,50 @@
 
 <body>
 
-    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
 
-    <div class="sidebar" id="sidebar">
+<header>
+        <nav>
+            <div class="lift-section">
+                <h1>
+                    Gaurav's Portfolio
+                </h1>
+            </div>
+            <div class="right-section">
+                <ul>
+                    <li class="hideOnMobile" ><a href="/index.html">Home</a></li>
+                    <li class="hideOnMobile" ><a href="/About.html">About me</a></li>
+                    <li class="hideOnMobile" ><a href="/Contact.html">Contact</a></li>
+                    <li class="hideOnMobile" ><a href="/Skills.html">Skills</a></li>
+                    <li class="hideOnMobile" ><a href="/Resume.html">Resume</a></li>
+                    <li class="hideOnMobile" ><a href="/Project.html">Projects</a></li>
+                    <button onclick=showSidenav() class="menu-btn" onclick="toggleSidebar()">☰</button>
 
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/About.html">About me</a></li>
-            <li><a href="/Contact.html">Contact</a></li>
-            <li><a href="/Skills.html">Skills</a></li>
-            <li><a href="/Resume.html">Resume</a></li>
-            <li><a href="/Project.html">Projects</a></li>
-        </ul>
+                </ul>
 
+            </div>
+        </nav>
+        <nav class="side-nav">
+            <!-- <div class="lift-section">
+                <h1>
+                    Gaurav's Portfolio
+                </h1>
+            </div> -->
+            
+            <div class="right-nav">
+                <ul>
+                    <li><img onclick=hidenav() class="cross-img" src="cross.png" alt=""></li>
 
-    </div>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/About.html">About me</a></li>
+                    <li><a href="/Contact.html">Contact</a></li>
+                    <li><a href="/Skills.html">Skills</a></li>
+                    <li><a href="/Resume.html">Resume</a></li>
+                    <li><a href="/Project.html">Projects</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
 
     <section class="resume" id="resume">
         <div class="resume-content">
@@ -54,10 +85,16 @@
 
 
     <script>
-        function toggleSidebar() {
-            document.getElementById("sidebar").classList.toggle("hide");
-        }
-    </script>
+    function showSidenav(){
+        const sidenav=document.querySelector('.side-nav');
+        sidenav.style.display ='flex'
+
+    }
+    function hidenav(){
+       const sidenav=document.querySelector('.side-nav');
+        sidenav.style.display ='none'
+    }
+</script>
 
 </body>
 
