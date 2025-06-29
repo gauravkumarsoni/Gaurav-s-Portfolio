@@ -23,6 +23,29 @@
             </div>
             <div class="right-section">
                 <ul>
+                    <li class="hideOnMobile" ><a href="/index.html">Home</a></li>
+                    <li class="hideOnMobile" ><a href="/About.html">About me</a></li>
+                    <li class="hideOnMobile" ><a href="/Contact.html">Contact</a></li>
+                    <li class="hideOnMobile" ><a href="/Skills.html">Skills</a></li>
+                    <li class="hideOnMobile" ><a href="/Resume.html">Resume</a></li>
+                    <li class="hideOnMobile" ><a href="/Project.html">Projects</a></li>
+                    <button onclick=showSidenav() class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+                </ul>
+
+            </div>
+        </nav>
+        <nav class="side-nav">
+            <!-- <div class="lift-section">
+                <h1>
+                    Gaurav's Portfolio
+                </h1>
+            </div> -->
+            
+            <div class="right-nav">
+                <ul>
+                    <li><img onclick=hidenav() class="cross-img" src="cross.png" alt=""></li>
+
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/About.html">About me</a></li>
                     <li><a href="/Contact.html">Contact</a></li>
@@ -39,9 +62,9 @@
             <div class="left-section">
                 <div class="Name">
                     <h1>Hi, I'm <span class="gau">Gaurav Kumar</span></h1>
-                    <p class="p-tag" >A passionate Full Stack Web Developer | B.Tech CSE Student</p>
-                    <p class="p-tag" >React.js | Node.js | JavaScript | Express.js | MongoDB</p>
-                    <p class="p-tag" >Let's build something great together!</p>
+                    <p class="p-tag">A passionate Full Stack Web Developer | B.Tech CSE Student</p>
+                    <p class="p-tag">React.js | Node.js | JavaScript | Express.js | MongoDB</p>
+                    <p class="p-tag">Let's build something great together!</p>
 
                     <div class="button">
                         <a href="https://tofoodrestaurant.netlify.app/" target="_blank" rel="noopener noreferrer">
@@ -54,15 +77,26 @@
 
 
                 </div>
+                <!-- class="compresOnMobile" -->
             </div>
-            <div class="right-section">
+            <div  class="right-section">
                 <img src="pro.png" alt="_blank">
             </div>
 
         </section>
     </main>
+<script>
+    function showSidenav(){
+        const sidenav=document.querySelector('.side-nav');
+        sidenav.style.display ='flex'
 
-   
+    }
+    function hidenav(){
+       const sidenav=document.querySelector('.side-nav');
+        sidenav.style.display ='none'
+    }
+</script>
+
 
 </body>
 
