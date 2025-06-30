@@ -3,18 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
     <title>Contact</title>
     <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
-  <header>
-        <nav>
+    <header>
+        <nav class="nav-p">
             <div class="lift-section">
                 <h1>
                     Gaurav's Portfolio
@@ -22,12 +23,12 @@
             </div>
             <div class="right-section">
                 <ul>
-                    <li class="hideOnMobile" ><a href="/index.html">Home</a></li>
-                    <li class="hideOnMobile" ><a href="/About.html">About me</a></li>
-                    <li class="hideOnMobile" ><a href="/Contact.html">Contact</a></li>
-                    <li class="hideOnMobile" ><a href="/Skills.html">Skills</a></li>
-                    <li class="hideOnMobile" ><a href="/Resume.html">Resume</a></li>
-                    <li class="hideOnMobile" ><a href="/Project.html">Projects</a></li>
+                    <li class="hideOnMobile"><a href="/index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="/About.html">About me</a></li>
+                    <li class="hideOnMobile"><a href="/Contact.html">Contact</a></li>
+                    <li class="hideOnMobile"><a href="/Skills.html">Skills</a></li>
+                    <li class="hideOnMobile"><a href="/Resume.html">Resume</a></li>
+                    <li class="hideOnMobile"><a href="/Project.html">Projects</a></li>
                     <button onclick=showSidenav() class="menu-btn" onclick="toggleSidebar()">☰</button>
 
                 </ul>
@@ -40,7 +41,7 @@
                     Gaurav's Portfolio
                 </h1>
             </div> -->
-            
+
             <div class="right-nav">
                 <ul>
                     <li><img onclick=hidenav() class="cross-img" src="cross.png" alt=""></li>
@@ -56,6 +57,7 @@
             </div>
         </nav>
     </header>
+
     <div class="top-s">
         <h2>Get In Touch</h2>
         <p>I’m always open to discussing new projects or opportunities. Fill out the form below and I’ll get back to you
@@ -90,17 +92,17 @@
 
 
 
-   <script>
-    function showSidenav(){
-        const sidenav=document.querySelector('.side-nav');
-        sidenav.style.display ='flex'
+    <script>
+        function showSidenav() {
+            const sidenav = document.querySelector('.side-nav');
+            sidenav.style.display = 'flex'
 
-    }
-    function hidenav(){
-       const sidenav=document.querySelector('.side-nav');
-        sidenav.style.display ='none'
-    }
-</script>
+        }
+        function hidenav() {
+            const sidenav = document.querySelector('.side-nav');
+            sidenav.style.display = 'none'
+        }
+    </script>
 
 </body>
 
